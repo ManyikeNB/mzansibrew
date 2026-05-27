@@ -3,6 +3,34 @@
 <title>Our Beers Mzansi Brew Co.</title>
 </head>
 
+<style>
+
+:root { --primary: #1C2526; --accent: #D97706; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: system-ui, sans-serif; background: var(--primary); color:#ddd; }
+        header { background: rgba(28,37,38,0.95); padding:1rem 5%; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; border-bottom:3px solid var(--accent); }
+        .logo { font-size:2rem; font-weight:bold; color:var(--accent); }
+        nav a { color:#ddd; margin-left:1.8rem; text-decoration:none; }
+        nav a:hover { color:var(--accent); }
+        section { padding:90px 5%; }
+        h2 { text-align:center; font-size:3rem; color:var(--accent); margin-bottom:3rem; }
+        .beers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .beer-card {
+            background:#2a3638;
+            border-radius:12px;
+            overflow:hidden;
+            text-align:center;
+        }
+        
+        
+        .beer-card h3 { color:var(--accent); margin:1.2rem 0 0.5rem; }
+        footer { background:#111; padding:3rem 5%; text-align:center; color:#888; }
+</style>
+
 <body>
 <header>
 <div>Mzansi Brew Co.</div>
